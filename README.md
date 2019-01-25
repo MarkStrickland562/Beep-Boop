@@ -15,8 +15,8 @@ _This is a website for accepting a user-inputted range of numbers and replacing 
 * _Validate that the number is a valid number._
 * _If the number is negative, treat it as a positive number._
 * _If the number is a decimal number, round it to the nearest integer._
-* _In the range of integers between zero and the user-inputted number and including zero and the user-inputted number, replace_
-* _selected numbers with an exception message based on a set of conditions evaluated in this order._
+* _In the range of integers between zero and the user-inputted number and including zero and the user-inputted number, replace
+selected numbers with an exception message based on a set of conditions evaluated in this order._
 1. Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
 2. Numbers that contain a 1 are replaced (all digits) with "Boop!"_
 3. Numbers that contain a 0 are replaced (all digits) with "Beep!"_
