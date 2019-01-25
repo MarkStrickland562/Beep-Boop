@@ -10,8 +10,19 @@
   <body>
     <div class="container">
       <div class="jumbotron jumbo-color well row-attributes bg-info">
-         <h1 class="hcenter blinking">Beep! Boop!</h1>
-         <h2 class="hcenter"><em><span style="font-family: cursive">Fun With Numbers</span></em></h2>
+        <h1 class="hcenter blinking">Beep! Boop!</h1>
+        <h2 class="hcenter"><em><span style="font-family: cursive">Fun With Numbers</span></em></h2>
+        <h5 class="hcenter">This little game will take a number and will change one or more<br>
+          of the integers between zero and that number as follows:</h5>
+          <p class="hcenter pfont">
+            <ul>
+              <li>If the number is evenly divisible by three, it will return a "sorry" message.</li>
+              <li>If the number contains a '1', it will return a fun message.</li>
+              <li>If the number contains a '0', it will return a different fun message.</li>
+              <li>Otherwise, it will return the number.</li>
+            </ul>
+            You can specify in which direction you want the integers to be processed, too, and the results will be displayed in that direction.
+          </p>
       </div>
       <div class="row row-attributes bg-info">
         <form id="nameForm">
@@ -33,7 +44,7 @@
         </div>
 
         <div class="col-md-6 col-noborder">
-          <h4>In which direction do you want to see the results?</h4>
+          <h5><strong>In which direction do you want to see the results?</strong></h5>
           <form id="Direction">
             <div class="form-group">
               <div class="radio">
