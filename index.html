@@ -9,19 +9,33 @@
   </head>
   <body>
     <div class="container">
-      <h1>Beep Boop!</h1>
-
-      <form id="beep-boop">
-        <div class="form-group">
-          <label for="myNumber">Enter a valid number:</label>
-          <input id="myNumber" type="text">
-        </div>
-
-        <button type="submit" class="btn">Show Me!</button>
-      </form>
-
+      <div class="jumbotron bg-grey well row-attributes">
+         <h1 class="hcenter blinking">Beep! Boop!</h1>
+         <h2 class="hcenter"><em><span style="font-family: cursive">Fun With Numbers</span></em></h2>
+      </div>
+      <div class="row row-attributes bg-grey">
+        <form id="nameForm">
+          <div class="form-group">
+            <label for="myName">Please Enter Your Name:</label>
+            <input id="myName" type="text">
+          </div>
+        </form>
+      </div>
+      <div class="row row-attributes bg-grey">
+        <form id="beep-boop">
+          <div class="form-group">
+            <label for="myNumber">Enter a Valid Number:</label>
+            <input id="myNumber" type="text">
+          </div>
+        <p>Note that decimal numbers will be rounded and negative numbers will be made positive.</p>
+        </form>
+      </div>
+      <div>
+        <form id="submit">
+          <button type="submit" class="btn btn-submit">Show Me!</button>
+        </form>
+      </div>
       <div id="result">
-
       </div>
     </div>
   </body>
