@@ -13,11 +13,11 @@ _This is a website for accepting a user-inputted range of numbers and replacing 
 _Accept a number from a user._
 _Validate that the number is a valid number._
 _In the range of numbers between zero and the user-inputted number and including zero and the user-inputted number, replace_
-_selected numbers with an exception message based on a set of conditions._
-_Numbers that contain a 0 are replaced (all digits) with "Beep!"_
-_Numbers that contain a 1 are replaced (all digits) with "Boop!"_
-_Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
-_Numbers that don't meet those conditions are returned without any modification._
+_selected numbers with an exception message based on a set of conditions evaluated in this order._
+_1) Numbers divisible by 3 are replaced with "I'm sorry, Dave. I'm afraid I can't do that."_
+_2) Numbers that contain a 1 are replaced (all digits) with "Boop!"_
+_3) Numbers that contain a 0 are replaced (all digits) with "Beep!"_
+_4) Numbers that don't meet those conditions are returned without any modification._
 
 ## Setup Instructions
 
