@@ -22,13 +22,36 @@
         </form>
       </div>
       <div class="row row-attributes bg-info">
-        <form id="beep-boop">
-          <div class="form-group">
-            <label for="myNumber">Enter a Valid Number:</label>
-            <input id="myNumber" type="text">
-          </div>
-        <p>Note that decimal numbers will be rounded and negative numbers will be made positive.</p>
-        </form>
+        <div class="col-md-6 col-noborder">
+          <form id="beep-boop">
+            <div class="form-group">
+              <label for="myNumber">Enter a Valid Number:</label>
+              <input id="myNumber" type="text">
+            </div>
+            <p>Note that decimal numbers will be rounded and negative numbers will be made positive.</p>
+          </form>
+        </div>
+
+        <div class="col-md-6 col-noborder">
+          <h4>In which direction do you want to see the results?</h4>
+          <form id="Direction">
+            <div class="form-group">
+              <div class="radio">
+                <label>
+                  <input type="radio" name="direction" value="1" checked="checked">
+                  Forward
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="direction" value="2">
+                  Backward
+                </label>
+              </div>
+            </div>
+          </form>
+        </div>
+
       </div>
       <div class="row row-attributes jumbo-color">
         <form id="submit">

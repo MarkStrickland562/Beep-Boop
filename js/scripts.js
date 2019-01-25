@@ -26,16 +26,23 @@ var beepBoop = function(myNumber) {
       numberArray.push(" " + numberString);
     }
   }
-  return numberArray;
+
+  if (direction === "1") {
+    return numberArray;
+  } else {
+  return numberArray.reverse();
+  }
 }
 
 $(document).ready(function() {
   $("form#submit").submit(function(event) {
     event.preventDefault();
 
+    myName = $("input#myName").val();
+
     var myNumber = $("input#myNumber").val();
 
-    myName = $("input#myName").val();
+    direction = $("input:radio[name=direction]:checked").val();
 
     if (!myName) {
       alert("Please enter your name");
@@ -52,7 +59,7 @@ $(document).ready(function() {
       $("button#showmeagain").fadeIn();
     }
     else {
-      $("#result").text("You entered an invalid number, please try again.");
+      alert("You entered an invalid number, please try again.");
     }
 
     $("input#myNumber").val('');
