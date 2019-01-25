@@ -46,6 +46,10 @@ $(document).ready(function() {
     else if (validate(myNumber)) {
       var result = beepBoop(myNumber);
       $("#result").text(result);
+      $("#yourName").empty().append(myName);
+      $("#result-text").fadeIn();
+      $("button#showme").fadeOut();
+      $("button#showmeagain").fadeIn();
     }
     else {
       $("#result").text("You entered an invalid number, please try again.");

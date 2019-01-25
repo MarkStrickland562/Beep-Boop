@@ -9,11 +9,11 @@
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron bg-grey well row-attributes">
+      <div class="jumbotron jumbo-color well row-attributes bg-info">
          <h1 class="hcenter blinking">Beep! Boop!</h1>
          <h2 class="hcenter"><em><span style="font-family: cursive">Fun With Numbers</span></em></h2>
       </div>
-      <div class="row row-attributes bg-grey">
+      <div class="row row-attributes bg-info">
         <form id="nameForm">
           <div class="form-group">
             <label for="myName">Please Enter Your Name:</label>
@@ -21,7 +21,7 @@
           </div>
         </form>
       </div>
-      <div class="row row-attributes bg-grey">
+      <div class="row row-attributes bg-info">
         <form id="beep-boop">
           <div class="form-group">
             <label for="myNumber">Enter a Valid Number:</label>
@@ -30,13 +30,18 @@
         <p>Note that decimal numbers will be rounded and negative numbers will be made positive.</p>
         </form>
       </div>
-      <div>
+      <div class="row row-attributes jumbo-color">
         <form id="submit">
-          <button type="submit" class="btn btn-submit">Show Me!</button>
+          <button type="submit" id="showme" class="btn btn-submit">Show Me!</button>
+          <div id="result-text"<div>
+            <h3>Here's your result, <span id="yourName"></span>!</h3>
+            <p><span id="result"></span></p>
+          </div>
         </form>
       </div>
-      <div id="result">
-      </div>
+      <form id="resubmit">
+        <button type="submit" id="showmeagain" class="btn btn-submit">Let's Do it Again!</button>
+      </form>
     </div>
   </body>
 </html>

@@ -13,8 +13,9 @@
     100%{   color: black;    }
 }
 
-.bg-grey {
-  background-color: lightgrey;
+.jumbo-color {
+  background-color: bisque;
+  color: darkblue;
 }
 
 .row-attributes {
@@ -38,9 +39,17 @@
 }
 
 .btn-submit {
-  background-color: green;
+  background-color: blue;
   color: white;
   font-weight: bold;
   border: 1px solid;
   border-color: black;
+}
+
+#result-text {
+  display: none;
+}
+
+#showmeagain {
+  display: none;
 }
