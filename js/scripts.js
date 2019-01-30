@@ -82,4 +82,10 @@ $(document).ready(function() {
 
     $("input#myNumber").val('');
 	});
+
+  $("#showmeagain").click(function() {
+alert(1);
+    location.reload();
+  });
+
 });
