@@ -84,7 +84,6 @@ $(document).ready(function() {
 	});
 
   $("#showmeagain").click(function() {
-alert(1);
     location.reload();
   });
 
